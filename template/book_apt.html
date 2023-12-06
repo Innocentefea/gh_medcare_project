@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Appointment</title>
+  <link rel="stylesheet" type="text/css" href="../static/styles/book_apt.css">
+</head>
+<body>
+  <h1>Book Appointment</h1>
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+    <div class="form-group">
+      <label for="sex">Sex:</label>
+      <select id="sex" name="sex" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="hospital">Select Hospital:</label>
+      <select id="hospital" name="hospital" required>
+        <option value="">Select</option>
+        <option value="Reddington Hospital">Reddington Hospital, Lagos</option>
+        <option value="St. Nicholas Hospital">St. Nicholas Hospital, Lagos</option>
+        <option value="Lagoon Hospitals">Lagoon Hospitals, Lagos</option>
+        <option value="Cedarcrest Hospitals">Cedarcrest Hospitals, Abuja</option>
+        <option value="Nisa Premier Hospital">Nisa Premier Hospital, Abuja</option>
+        <option value="Euracare Multi-Specialist Hospital">Euracare Multi-Specialist Hospital, Lagos</option>
+        <option value="St. Ives Hospital">St. Ives Hospital, Lagos</option>
+        <option value="Premier Specialists' Medical Centre">Premier Specialists' Medical Centre, Lagos</option>
+        <option value="Olive Multi-Specialist Hospital">Olive Multi-Specialist Hospital, Lagos</option>
+        <option value="St. Augustine Medical Services">St. Augustine Medical Services, Lagos</option>
+        <option value="The Bridge Clinic">The Bridge Clinic, Lagos</option>
+        <option value="Lily Hospitals Limited">Lily Hospitals Limited, Warri</option>
+        <option value="Eko Hospitals">Eko Hospitals, Lagos</option>
+        <option value="Mart Life Detox Clinic">Mart Life Detox Clinic, Lagos</option>
+        <option value="Nordica Fertility Centre">Nordica Fertility Centre, Lagos</option>
+        <option value="Bridge Clinic">Bridge Clinic, Abuja</option>
+        <option value="Lakeshore Cancer Center">Lakeshore Cancer Center, Lagos</option>
+        <option value="George's Memorial Medical Centre">George's Memorial Medical Centre, Lagos</option>
+        <option value="Me Cure Healthcare Limited">Me Cure Healthcare Limited, Lagos</option>
+        <option value="St. Claire Specialist Clinic">St. Claire Specialist Clinic, Lagos</option>
+        <option value="Renal Dialysis Centre">Renal Dialysis Centre, Abuja</option>
+        <option value="Union Diagnostics and Clinical Services Plc">Union Diagnostics and Clinical Services Plc, Lagos</option>
+        <option value="South Shore Women's and Children's Hospital">South Shore Women's and Children's Hospital, Lagos</option>
+        <option value="Eye Foundation Hospital">Eye Foundation Hospital, Lagos</option>
+        <option value="In-vitro Fertility (IVF) Clinics">In-vitro Fertility (IVF) Clinics, Lagos</option>
+        <option value="National Hospital Abuja">National Hospital Abuja</option>
+        <option value="Lagos University Teaching Hospital (LUTH)">Lagos University Teaching Hospital (LUTH), Lagos</option>
+        <option value="University College Hospital (UCH)">University College Hospital (UCH), Ibadan</option>
+        <option value="Federal Medical Centre Abuja">Federal Medical Centre, Abuja</option>
+        <option value="University of Nigeria Teaching Hospital (UNTH)">University of Nigeria Teaching Hospital (UNTH), Enugu</option>
+        <option value="Ahmadu BelloUniversity Teaching Hospital (ABUTH)">Ahmadu Bello University Teaching Hospital (ABUTH), Zaria</option>
+        <option value="Aminu Kano Teaching Hospital (AKTH)">Aminu Kano Teaching Hospital (AKTH), Kano</option>
+        <option value="University of Benin Teaching Hospital (UBTH)">University of Benin Teaching Hospital (UBTH), Benin</option>
+        <option value="University of Port Harcourt Teaching Hospital (UPTH)">University of Port Harcourt Teaching Hospital (UPTH), Port Harcourt</option>
+        <option value="Obafemi Awolowo University Teaching Hospitals Complex (OAUTHC)">Obafemi Awolowo University Teaching Hospitals Complex (OAUTHC), Ile-Ife</option>
+        <option value="Federal Medical Centre, Umuahia">Federal Medical Centre, Umuahia</option>
+        <option value="Federal Medical Centre, Owerri">Federal Medical Centre, Owerri</option>
+        <option value="Federal Medical Centre, Asaba">Federal Medical Centre, Asaba</option>
+        <option value="Federal Medical Centre, Abeokuta">Federal Medical Centre, Abeokuta</option>
+        <option value="Federal Medical Centre, Yenagoa">Federal Medical Centre, Yenagoa</option>
+        <option value="Federal Medical Centre, Ekiti">Federal Medical Centre, Ekiti</option>
+        <option value="Federal Medical Centre, Keffi">Federal Medical Centre, Keffi</option>
+        <option value="Federal Medical Centre, Makurdi">Federal Medical Centre, Makurdi</option>
+        <option value="Federal Medical Centre, Gombe">Federal Medical Centre, Gombe</option>
+        <option value="Federal Medical Centre, Lokoja">Federal Medical Centre, Lokoja</option>
+        <option value="Federal Medical Centre, Birnin Kebbi">Federal Medical Centre, Birnin Kebbi</option>
+        <option value="Federal Medical Centre, Jalingo">Federal Medical Centre, Jalingo</option>
+        <option value="Federal Medical Centre, Umuahia">Federal Medical Centre, Umuahia</option>
+        <option value="Federal Medical Centre, Owo">Federal Medical Centre, Owo</option>
+        <option value="Federal Medical Centre, Idi-Aba">Federal Medical Centre, Idi-Aba</option>
+        <option value="Federal Medical Centre, Gusau">Federal Medical Centre, Gusau</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="appointment-type">Appointment Type:</label>
+      <select id="appointment-type" name="appointment-type" required>
+        <div class="form-group">
+          <label for="appointment-type">Appointment Type:</label>
+          <select id="appointment-type" name="appointment-type" required>
+            <option value="">Select</option>
+            <option value="General Check-up">General Check-up</option>
+            <option value="Diagnostic Tests">Diagnostic Tests</option>
+            <option value="Vaccination">Vaccination</option>
+            <option value="Specialist Consultation">Specialist Consultation</option>
+            <option value="Surgery">Surgery</option>
+            <option value="Dental Care">Dental Care</option>
+            <option value="Maternity Care">Maternity Care</option>
+          </select>
+        </div>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="preferred-time">Preferred Time:</label>
+      <select id="preferred-time" name="preferred-time" required>
+        <option value="">Select</option>
+        <option value="time1">Time 1</option>
+        <option value="time2">Time 2</option>
+        <option value="time3">Time 3</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="preferred-date">Preferred Date:</label>
+      <input type="date" id="preferred-date" name="preferred-date" required>
+    </div>
+    <button type="submit">Book Appointment</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

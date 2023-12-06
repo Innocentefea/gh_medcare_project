@@ -1,0 +1,234 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a universal box-sizing rule */
+* {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Logo styles */
+.project-name {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #3498db; /* Choose your desired color */
+  text-align: center;
+  margin-top: 10px; /* Adjust the margin to position it */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle text shadow */
+}
+
+
+/* Main styles */
+main {
+  padding: 30px;
+}
+
+/* Hero section styles */
+#hero {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#hero h1 {
+  color: #3498db;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2em;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+#gh_medcare {
+  max-width: 100%;
+  height: auto;
+}
+
+/* About section styles */
+#about {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+#about h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Book Appointment section styles */
+#book-appointment {
+  text-align: center;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+#book-appointment h2 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#book-appointment p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#book-appointment img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add a border-radius for a rounded image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+}
+
+#book-appointment a.cta-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#book-appointment a.cta-button:hover {
+  background-color: #2980b9;
+}
+
+/* Providers section styles */
+#providers {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+#providers h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#providers p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Contact section styles */
+#contact {
+  text-align: center;
+  padding: 40px;
+}
+
+#contact h2 {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+#contact button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+#contact button:hover {
+  background-color: #2980b9;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav li {
+      margin: 10px 0;
+      display: block;
+  }
+}
