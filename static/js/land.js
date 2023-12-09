@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const imageElement = document.getElementById('gh_medcare');
 
   // Array of image sources
-  const imageSources = ['../static/images/images/web.jpg', '../static/images/pop.jpg', '../static/images/telemed.gif'];
+  const imageSources = ['../static/images/telemedicine.jpg', '../static/images/pop.jpg', '../static/images/telemedicinebook.jpg'];
 
   // Interval between image changes (in milliseconds)
   const interval = 5000; // Change image every 5 seconds
@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Call the changeImage function at the specified interval
   setInterval(changeImage, interval);
 });
-
 // landing_page.js
 
 // Function to handle smooth scrolling when clicking on navigation links

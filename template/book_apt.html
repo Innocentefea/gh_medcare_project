@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Book Appointment</title>
+  <title>GH MEDCAARE</title>
   <link rel="stylesheet" type="text/css" href="../static/styles/book_apt.css">
 </head>
+<img src="../static/images/telemed.12345.gif"><br>
 <body>
   <h1>Book Appointment</h1>
+  <div class="line"></div>
+  <div class="project-name">GH MEDCARE</div> <!-- Add this div -->
   <form>
     <div class="form-group">
       <label for="name">Name:</label>
@@ -23,8 +26,9 @@
       <label for="sex">Sex:</label>
       <select id="sex" name="sex" required>
         <option value="">Select</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Others">Others</option>
       </select>
     </div>
     <div class="form-group">
@@ -87,26 +91,19 @@
         <option value="Federal Medical Centre, Idi-Aba">Federal Medical Centre, Idi-Aba</option>
         <option value="Federal Medical Centre, Gusau">Federal Medical Centre, Gusau</option>
       </select>
-    </div>
-    <div class="form-group">
-      <label for="appointment-type">Appointment Type:</label>
-      <select id="appointment-type" name="appointment-type" required>
-        <div class="form-group">
-          <label for="appointment-type">Appointment Type:</label>
-          <select id="appointment-type" name="appointment-type" required>
-            <option value="">Select</option>
-            <option value="General Check-up">General Check-up</option>
-            <option value="Diagnostic Tests">Diagnostic Tests</option>
-            <option value="Vaccination">Vaccination</option>
-            <option value="Specialist Consultation">Specialist Consultation</option>
-            <option value="Surgery">Surgery</option>
-            <option value="Dental Care">Dental Care</option>
-            <option value="Maternity Care">Maternity Care</option>
-          </select>
-        </div>
-      </select>
-    </div>
-    <div class="form-group">
+      <div class="form-group">
+        <label for="appointment-type">Appointment Type:</label>
+        <select id="appointment-type" name="appointment-type" required>
+          <option value="">Select</option>
+          <option value="General Check-up">General Check-up</option>
+          <option value="Diagnostic Tests">Diagnostic Tests</option>
+          <option value="Vaccination">Vaccination</option>
+          <option value="Specialist Consultation">Specialist Consultation</option>
+          <option value="Surgery">Surgery</option>
+          <option value="Dental Care">Dental Care</option>
+          <option value="Maternity Care">Maternity Care</option>
+        </select>
+      </div>
       <label for="preferred-time">Preferred Time:</label>
       <select id="preferred-time" name="preferred-time" required>
         <option value="">Select</option>
@@ -120,7 +117,13 @@
       <input type="date" id="preferred-date" name="preferred-date" required>
     </div>
     <button type="submit">Book Appointment</button>
+    <div id="success-message" style="display: none;">
+      Appointment Successful!
+    </div>
   </form>
-  <script src="script.js"></script>
+  <script src="../static/js/book_apt.js"></script>
+  <footer>
+    <p>&copy; 2023 GH MedCare. All rights reserved.</p>
+  </footer>
 </body>
 </html>

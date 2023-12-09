@@ -178,6 +178,12 @@ main {
   padding: 40px;
 }
 
+/* Log out section styles */
+#logout {
+  text-align: center left;
+  padding: 40px;
+}
+
 #contact h2 {
   color: #333;
   font-size: 2em;
